@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Space Busters</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav-logo">Asteroid</div>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#modules">Modules</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Explore Near‑Earth Asteroids in 3D</h1>
+          <p>
+            A browser‑based playground for tracking asteroid orbits, close approaches,
+            and impact risk — built on real orbital data.
+          </p>
+          <div class="hero-actions">
+            <a href="#modules" class="btn-primary">Start Exploring</a>
+            <a href="#features" class="btn-ghost">Learn more</a>
+          </div>
+          <p class="hero-note">
+            Landing page only for now — simulation & CV modules coming soon.
+          </p>
+        </div>
+        <div class="hero-visual">
+          <div class="orbit-orb"></div>
+          <div class="orbit-ring orbit-ring-1"></div>
+          <div class="orbit-ring orbit-ring-2"></div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section id="features" class="section">
+        <h2>Cool things you’ll be able to do</h2>
+        <div class="section-grid">
+          <div class="feature-card">
+            <h3>Track Asteroids</h3>
+            <p>See the next close approaches to Earth in a clean dashboard.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Visualize Orbits</h3>
+            <p>Watch simulated orbits around the Sun and Earth in 2D/3D views.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Estimate Risk</h3>
+            <p>Combine distance, velocity, and size into simple risk indicators.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Run CV on Frames</h3>
+            <p>Upload or stream frames and detect moving asteroid‑like objects.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Replay Missions</h3>
+            <p>Later: simple story views of key missions like DART or OSIRIS‑REx.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Classify Objects</h3>
+            <p>Later: ML‑powered tagging of near‑Earth objects in telescope images.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modules (future subpages) -->
+      <section id="modules" class="section section-dark">
+        <h2>Project modules</h2>
+        <p class="section-lead">
+          These cards are placeholders. Each will later become its own page
+          connected to the backend & CV pipeline.
+        </p>
+        <div class="section-grid">
+          <div class="module-card">
+            <h3>Orbit Simulation</h3>
+            <p>2D orbit viewer with time controls and asteroid trajectories.</p>
+            <button class="btn-disabled" disabled>Coming soon</button>
+          </div>
+          <div class="module-card">
+            <h3>Asteroid Dashboard</h3>
+            <p>Table of NEOs with distance, velocity, and risk metrics.</p>
+            <button class="btn-disabled" disabled>Coming soon</button>
+          </div>
+          <div class="module-card">
+            <h3>CV Detection Lab</h3>
+            <p>Upload frames, run detection, and visualize bounding boxes.</p>
+            <button class="btn-disabled" disabled>Coming soon</button>
+          </div>
+          <div class="module-card">
+            <h3>Mission Stories</h3>
+            <p>Simple narratives around past and planned asteroid missions.</p>
+            <button class="btn-disabled" disabled>Coming soon</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Prototype inspired by NASA “Eyes” experiences. Not affiliated with NASA.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
